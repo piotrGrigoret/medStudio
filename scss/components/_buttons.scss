@@ -1,0 +1,8 @@
+.button-primary {
+    @include button($primary-color, white);
+  }
+  
+  .button-secondary {
+    @include button($secondary-color, white);
+  }
+  

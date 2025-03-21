@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'PTRootUI';
+    src: url('../../assets/fonts/pt-root-ui_vf.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+
+$primary-color: #40B526;
+$secondary-color: #3B64A1;
+$background-color: #F3F7F9;
+$font-color: #252D33;
+
+$base-font-size: 18px;
+$heading-font-size: 48px;
+$second-heading-font-size: 36px;
+
+$font-family: 'PTRootUI';
+
+
+// Переменные контейнера
+$container-max-width: 1200px;
+$container-padding: 15px;
+$sm-screen: 576px;
+$md-screen: 768px;
+$lg-screen: 1024px;
+$xl-screen: 1200px;

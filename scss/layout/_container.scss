@@ -1,0 +1,27 @@
+
+// Основной контейнер
+.container {
+  width: 100%;
+  max-width: $container-max-width;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: $sm-screen) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @media (max-width: $md-screen) {
+    max-width: 720px;
+  }
+
+  @media (max-width: $lg-screen) {
+    max-width: 960px;
+  }
+
+  @media (max-width: $xl-screen) {
+    max-width: $container-max-width;
+  }
+}
