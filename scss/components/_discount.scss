@@ -1,0 +1,55 @@
+.discount{
+    background-color: $font-color;
+    margin-top: 60px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    &__content{
+        display: flex;
+        align-items: center;
+        gap: 85px;
+        .first-block{
+            color: $second-font-color;
+            max-width:560px;
+            h5{
+                font-size: 12px;
+                font-weight: bold;
+                letter-spacing: 2px;
+            }
+            h3{
+                color: white;
+                font-size: $second-heading-font-size;
+                font-weight: bold;
+                margin-top: 15px;
+            }
+            p{
+                font-size: $base-font-size;
+                margin-top: 20px;
+            }
+        }
+        .second-block{
+            position: relative;
+            width: 470px;
+            height: 285px;
+            cursor: pointer;
+
+            img:first-child{
+                border-radius: 2px;
+
+            }
+            img:nth-child(2){
+                width: 130px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            img:nth-child(3){
+                position: absolute;
+                left: 78%;
+                transform: translate(0%, -50%);
+
+            }
+        }
+
+    }
+}

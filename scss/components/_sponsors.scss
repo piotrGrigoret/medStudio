@@ -1,0 +1,24 @@
+.sponsors{
+    margin-top: 80px;
+    padding-bottom: 120px;
+    h4{
+        font-size: $second-heading-font-size;
+        font-weight: bold;
+    }
+    .general{
+        margin-top: 30px;
+        margin-bottom: 80px;
+        display: flex;
+        gap: 40px;
+        justify-content: space-between;
+        img{max-width: 560px;}
+
+    }
+    .parthners{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        img{max-width: 360px;}
+    }
+}

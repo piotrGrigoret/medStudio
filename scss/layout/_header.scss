@@ -1,6 +1,7 @@
 .header{
   font-size: $base-font-size;
   font-weight: bold;
+
   &__content{
     display: flex;
     justify-content: space-between;
@@ -10,6 +11,12 @@
   &__navbar{
     display: flex;
     gap: 95px;
+    width: 100%;
+    .burger-menu{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
   }
   &__nav-links{
     display: flex;
@@ -17,52 +24,76 @@
     list-style: none;
 
     a{text-decoration: none; color:$font-color;}
+  
+    li:last-child   {
+      a {
+        color: $primary-color; 
+        display: flex;
+        gap: 4px;
+        font-weight: bolder;
+      }
+    }
   }
 
-  .dropdown {
+  &__dropdown {
     position: relative;
-    display: inline-block;
+    z-index: 100;
 
     .dropdown-btn {
         background: none;
         border: none;
-        font-size: 1rem;
+        font-size: $base-font-size;
+        font-family: $font-family;
+        font-weight: bold;
         cursor: pointer;
-        padding: 10px;
+        
+        img {
+          transition: transform 0.3s ease;
+        }
+      
+      
     }
 
     .dropdown-menu {
         position: absolute;
         top: 100%;
         left: 0;
-        background: white;
-        border: 1px solid #ddd;
+        background: $background-color;
+        border-radius: 5px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         list-style: none;
         padding: 0;
         margin: 0;
-        min-width: 150px;
-        display: none;
-        
+        min-width: 190px;
+        opacity: 0;
+        transform: translateY(-8px);
+        visibility: hidden;
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
         li {
-            padding: 10px;
-            
             a {
                 text-decoration: none;
-                color: #333;
+                color: $font-color;
                 display: block;
-
+                padding: 10px;
+                border-radius: 5px;
                 &:hover {
-                    background: #f4f4f4;
+                    color: $background-color;
+                    background: $primary-color;
                 }
             }
+
         }
     }
 
     &:hover .dropdown-menu {
-        display: block;
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;       
     }
-}
-
+    &:hover .dropdown-btn img{
+      transform: rotate(180deg);
+    } 
+  }
+  
 }
 

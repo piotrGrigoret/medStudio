@@ -1,0 +1,40 @@
+.speakers{
+    margin-top: 80px;
+    h3{
+        font-size:$second-heading-font-size;
+        font-weight: bold;
+    }
+    &__cards-box{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;        
+        .card{
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            max-width: 580px;
+            gap: 20px;
+
+            img{
+                height: 185px;
+                object-fit: cover;
+                object-position: center;
+            }
+            div{
+                h4{
+                    font-size: 22px;
+                    font-weight: bold;
+                }
+
+                p{
+                    font-size: 14px;
+                    color: $second-font-color;
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+
+
+}

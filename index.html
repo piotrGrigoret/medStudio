@@ -1,77 +1,269 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лендинг</title>
-    <link rel="icon" href="./assets/png/play.png" >
-    <link rel="stylesheet" href="./css/index.css">
-</head>
-<body>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Лендинг</title>
+      <link rel="icon" href="./assets/png/play.png" >
+      <link rel="stylesheet" href="./css/index.css">
+  </head>
+  <body>
     <header class="header container">
       <div class="header__content">
-          <nav class="header__navbar">
-              <div>
-                  <img src="./assets/svg/MainLogo.svg" alt="">
-              </div>
+        <div class="header__navbar">
+            <div>
+              <a href="/"><img src="./assets/svg/MainLogo.svg" alt=""></a>
+            </div> 
+            <div class="burger-menu">
               <ul class="header__nav-links">
-                  <li><a href="#">Расписание</a></li>
-                  <li><a href="#">Курсы</a></li>
-                  <li><a href="#">Проекты</a></li>
-                  <li><a href="#">Медиатека</a></li>
-                  <li><a href="#">О проекте</a></li>
-                  <li><a href="#">MS</a></li>
+                <li><a href="#">Расписание</a></li>
+                <li><a href="#">Курсы</a></li>
+                <li><a href="#">Проекты</a></li>
+                <li>
+                  <div class="header__dropdown">
+                    <button class="dropdown-btn">Медиатека <img src="./assets/svg/chevron-down.svg" alt=""></button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">проект 1</a></li>
+                      <li><a href="#">проект 2</a></li>
+                      <li><a href="#">проект 3</a></li>
+                      <li><a href="#">проект 4</a></li>
+                      <li><a href="#">проект 5</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="header__dropdown">
+                    <button class="dropdown-btn">О проекте <img src="./assets/svg/chevron-down.svg" alt=""></button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">О нас</a></li>
+                      <li><a href="#">Наши партнёры</a></li>
+                      <li><a href="#">Отзывы</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">MS <img src="./assets/svg/club.svg" alt=""></a></li>
               </ul>
-          </nav>
-          <div class="dropdown">
-            <button class="dropdown-btn">Личный кабинет</button>
-            <ul class="dropdown-menu">
+
+              <div class="header__dropdown">
+              <button class="dropdown-btn">Личный кабинет <img src="./assets/svg/chevron-down.svg" alt=""></button>
+              <ul class="dropdown-menu">
                 <li><a href="#">Профиль</a></li>
                 <li><a href="#">Настройки</a></li>
-                <li><a href="#">Выход</a></li>
-            </ul>
+                <li><a href="#">Выйти</a></li>
+              </ul>
+            </div>
+            </div>
           </div>
-      </div>
+        </div>
+        
     </header>
-      <!-- Основной контент -->
-      <main class="container">
-        <section class="intro">
-          <h2>Introduction</h2>
+     
+     <section class="hero container">
+        <ul class="hero__menu-section">
+          <li>Описание</li>
+          <li>Обучение</li>
+          <li>Чат</li>
+          <li>Документы и оплата</li>
+        </ul>
+
+        <div class="hero__main-info">
+            <div class="main-info-box first">
+              <img src="./assets/svg/nmo-logo.svg" alt="">
+              <p>+36</p>
+            </div>
+            <div class="main-info-box second">
+                <div>НОВЫЙ ПОТОК</div>
+                <div> С 25 АВГУСТА</div>
+                <div><img src="./assets/svg/KnowledgeLarge.svg" alt=""> 12 модулей</div>
+                <div><img src="./assets/svg/ClockLarge.svg" alt=""> 40 ак. часов</div>
+            </div>
+            <div class="main-info-box third">
+              <p>
+                Лечение острых вирусных инфекций методом энтервектоскопии
+              </p>
+              <img src="./assets/svg/orto.svg" alt="">
+            </div>
+            <div class="main-info-box fourth">
+              <button>Text</button>
+              <button>Text</button>
+            </div>
+            <div class="main-info-box fiveth">
+              <button>Text</button>
+              <div>
+                <img src="./assets/svg/credit-card-outline.svg" alt="">
+                
+              </div>
+            </div>
+        </div>
+      </section> 
+      
+    <section class="program container">
+        <div class="program__first-block">
           <p>
-            This is an example landing page. It's simple, elegant, and responsive.
-            You can customize it for your product or service.
+            Зенитное часовое число, как бы это ни казалось парадоксальным, притягивает случайный Ганимед. Как было показано выше, природа гамма-всплексов вызывает болид . Вселенная достаточно огромна, чтобы аномальная джетовая активность последовательно оценивает центральный параметр. Нулевой меридиан представляет собой далекий математический горизонт. Хотя хpонологи не увеpены, им кажется, что декретное время вызывает лимб. У планет-гигантов нет твёрдой поверхности, таким образом астероид прочно оценивает натуральный логарифм.
           </p>
-          <a href="#" class="button-primary">Learn More</a>
-        </section>
-    
-        <!-- Карточки -->
-        <section class="cards">
-          <div class="card">
-            <div class="card-header">Card 1</div>
-            <div class="card-body">
-              This is a simple card with some content inside it.
+          <div class="first-block-description">
+              <h2>Программа курса</h2>
+              <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                      Часть 1. Теоретическая часть <img src="./assets/svg/chevron-down.svg" alt="">
+                    </button>
+                    <div class="accordion-content">
+                        <div id="openModal" class="video">
+                          <div class="play-video">
+                            <img src="./assets/png/Card One.png" alt="">
+                            <img class="play" src="./assets/svg/Play Button (Medium).svg" alt="">
+                          </div>
+                          <p>
+                            Лекция 1. Что такое резекция лазером и в чём преимущество энтервектоскопии для лечения бесплодия
+                          </p>
+                        </div>
+
+                        <div class="video">
+                          <div  class="play-video">
+                            <img src="./assets/png/Card One (1).png" alt="">
+                            <img class="play block" src="./assets/svg/lock-outline.svg" alt="">
+                          </div>
+                          <p>
+                            Лекция 2. Энтервектоскопия как базовый метод лечения гемангиомы Шлейна
+                          </p>
+                        </div>
+
+                        <div class="video">
+                          <div class="play-video">
+                            <img src="./assets/png/Card One (2).png" alt="">
+                            <img class="play block" src="./assets/svg/lock-outline.svg" alt="">
+                          </div>
+                          <p>
+                            Лекция 3. Проведение прокралификации кожа при завершении энтервектоскопии и дальнейшее симптоматическое лечение
+                          </p>
+                        </div>
+
+                        <div class="video">
+                          <div class="play-video">
+                            <img src="./assets/png/Card One (3).png" alt="">
+                            <img class="play block" src="./assets/svg/Globe Large.svg" alt="">
+                          </div>
+                          <p>
+                            Онлайн-трансляция со всеми спикерами
+                          </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                      Часть 2. Практическая часть <img src="./assets/svg/chevron-down.svg" alt="">
+                    </button>  
+                    <div class="accordion-content">
+                        <p>Содержимое второго раздела.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                      Часть 3. Финал <img src="./assets/svg/chevron-down.svg" alt="">
+                    </button>                    
+                    <div class="accordion-content">
+                        <div class="final">
+                            <h5>ДОСТУПНО ПОСЛЕ ПРОХОЖДЕНИЯ КУРСА </h5>
+                            <h3>
+                              <img src="./assets/svg/Big Award Icon.svg" alt="">
+                              Часть 4. Итоговый контроль
+                            </h3>
+                            <div>
+                              <h6><img src="./assets/svg/Question Large.svg" alt="">Вопросов: 30</h6>
+                              <h6><img src="./assets/svg/clock-outline.svg" alt="">Время: 60 мин</h6>
+                              <h6><img src="./assets/svg/Sync Large.svg" alt="">Попыток: 2</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
           </div>
-    
-          <div class="card">
-            <div class="card-header">Card 2</div>
-            <div class="card-body">
-              Another example of a card with some different content.
+        </div>
+        <div class="program__second-block">
+          <h3>Оплата курса</h3>
+          <p>Курс будет доступен сразу после оплаты, но для получения баллов НМО необходимо предоставить <span>документы</span></p>
+          <div>7 999 ₽</div>
+          <button><img src="./assets/svg/credit-card-outline.svg" alt="">Перейти к оплате курса</button>
+          <h4>Получить скидку 10%</h4>
+        </div>
+      </section> 
+      
+      <section class="discount">
+        <div class="container">
+            <div class="discount__content">
+              <div class="first-block">
+                  <h5>ПОДАРОК</h5>
+                  <h3>Даём скидку 10% за просмотр материала партнёров</h3>
+                  <p>Зенитное часовое число, как бы это ни казалось парадоксальным, притягивает случайный Ганимед. Как было показано выше, природа гамма-всплексов вызывает болид.</p>
+              </div>
+              <div id="openModal" class="second-block">
+                <img  src="./assets/png/Frame 81.png" alt="">
+                <img  src="./assets/svg/Play Button (Medium).svg" alt="">
+                <img  src="./assets/svg/Group 440.svg" alt="">
+              </div>
             </div>
-          </div>
-    
+        </div>
+      </section>
+
+      <section class="speakers container">
+        <h3>Спикеры</h3>
+        <div class="speakers__cards-box">
           <div class="card">
-            <div class="card-header">Card 3</div>
-            <div class="card-body">
-              You can add any kind of content inside these cards.
-            </div>
+              <img src="./assets/png/Card Background.png" alt="">
+              <div>
+                  <h4>
+                    Константинопольский
+                    Константин Константинович
+                  </h4>
+                  <p>
+                    Главный внештатный специалист Минздрава России по управлению сестринской деятельностью, главная медицинская сестра ФГБУ «HMXЦ им. Н.И. Пирогова» Минздрава России, доцент кафедры управления сестринской деятельностью и социальной работы Первого МГМУ им. И.М. Сеченова, к.м.н.
+                  </p>
+              </div>
           </div>
-        </section>
-      </main>
-    
-      <!-- Подвал -->
-      <footer class="footer">
-        <p>© 2025 Landing Page. All Rights Reserved.</p>
-      </footer>
-</body>
+
+          <div class="card">
+            <img src="./assets/png/Card Background (1).png" alt="">
+            <div>
+                <h4>
+                  Елисеева
+                  Дарья Дмитриевна
+                </h4>
+                <p>
+                  Главный внештатный специалист Минздрава России по управлению сестринской деятельностью, главная медицинская сестра ФГБУ «HMXЦ им. Н.И. Пирогова»
+                </p>
+            </div>
+        </div>
+        </div>
+      </section> 
+
+      <section class="sponsors container">
+        <h4>Генеральные спонсоры</h4>
+        <div class="general">
+          <img src="./assets/svg/Sponsor 1.svg" alt="">
+          <img src="./assets/svg/Sponsor 2.svg" alt="">
+        </div>
+        <h4>Генеральные спонсоры</h4>
+        <div class="parthners">
+          <img src="./assets/svg/Logo 1.svg" alt="">
+          <img src="./assets/svg/Logo 2.svg" alt="">
+          <img src="./assets/svg/Logo 3.svg" alt="">
+        </div>
+
+      </section> 
+     
+      <div class="modal" id="modal">
+        <div class="modal__content">
+          <span class="modal__close">&times;</span>
+            <video autoplay loop muted playsinline>
+              <source src="./assets/video/13206569_1920_1080_30fps.mp4" type="video/mp4">
+              Ваш браузер не поддерживает тег video.
+            </video>
+        </div>
+      </div> 
+
+      <script src="./js/index.js"></script>
+  </body>
 </html>
