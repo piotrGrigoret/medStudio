@@ -3,6 +3,6 @@
   <h1>Landing Page - test task</h1>
 </div>
 
-#### The landing is available online at this url: 
+
 
 
